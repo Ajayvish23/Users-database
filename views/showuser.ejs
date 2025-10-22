@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>User Details</title>
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+<div class="showuser">
+   <h2>User Details</h2>
+
+<form method="post" action="/users/details/<%=user.id%>?_method=DELETE">
+    <p>User ID: <%= user.id %></p>
+    <p>Username: <%= user.username %> </p>
+    <p>Email: <%= user.email %> </p>
+    <p>Password: <%= user.password %> </p>
+    <p><i>(for now password is visible as it is required in update page)</i></p><br>
+    <button type="submit">Delete User</button>
+</form>
+</div>
+</body>
+</html>
+
+
+
+
+
